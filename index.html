@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Uygulama Adı</title>
+<meta name="description" content="Kimyasal maddelerin geri dönüşüm uygunluğunu kare kod, etiket fotoğrafı veya aramayla gösterir.">
+<meta name="theme-color" content="#0b5f73">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="brand">
+    <div>
+      <h1 id="appName">Uygulama Adı</h1>
+      <p>Kare kodu okut, geri dönüşüm uygunluğunu gör</p>
+    </div>
+    <button type="button" class="dots" id="dots" aria-label="Menü" aria-haspopup="true" aria-expanded="false">⋮</button>
+    <div class="menu" id="menu" hidden>
+      <button type="button" id="mList"><span>Kayıtlı maddeler</span><small id="mCount"></small></button>
+      <button type="button" id="mAdmin"><span>Yönetici girişi</span></button>
+      <button type="button" id="mInstall" hidden><span>Telefona yükle</span></button>
+    </div>
+  </header>
+
+  <section class="panel scan" aria-label="Okuyucu ve arama">
+    <div class="finder" id="finder">
+      <i></i><i></i><i></i><i></i>
+      <video id="video" playsinline muted hidden></video>
+      <p id="finderText">Kare kodu kameraya tut veya ürün etiketinin fotoğrafını çek.</p>
+    </div>
+    <div class="btns">
+      <button type="button" class="btn" id="camBtn">Kare kodu okut</button>
+      <input class="vh" type="file" id="prod" accept="image/*" capture="environment">
+      <label class="btn" for="prod">Etiket fotoğrafıyla ara</label>
+      <input class="vh" type="file" id="gal" accept="image/*">
+      <label class="btn alt wide" for="gal">Galeriden kare kod seç</label>
+    </div>
+    <p id="status" role="status" aria-live="polite">Maddeler yükleniyor…</p>
+    <form id="f" class="search">
+      <label for="q">Kimyasal ara</label>
+      <input id="q" type="search" autocomplete="off" placeholder="Ad, formül veya CAS numarası">
+      <div class="list" id="hits" hidden></div>
+    </form>
+  </section>
+
+  <section class="panel sheet" id="sheet" aria-live="polite"><p class="none">Maddeler yükleniyor…</p></section>
+
+  <p class="note">Uygunluk seviyesi ve atık kodları yol göstericidir, tehlike bilgileri saf veya belirtilen derişimdeki madde içindir. Karışımlar ve kirlenmiş atıklar farklı sınıflandırılır. Karar vermeden önce üreticinin Güvenlik Bilgi Formunu inceleyin, tehlikeli atığı lisanslı firmaya teslim edin.</p>
+</div>
+
+<dialog id="drawer" aria-labelledby="dTitle">
+  <div class="dhead">
+    <h2 id="dTitle">Kayıtlı maddeler</h2>
+    <button type="button" class="dots" id="dClose" aria-label="Kapat">×</button>
+  </div>
+
+  <div id="vList">
+    <label class="vh" for="lq">Listede ara</label>
+    <input id="lq" type="search" autocomplete="off" placeholder="Listede ara">
+    <div class="chips" id="chips"></div>
+    <div class="list" id="list"></div>
+  </div>
+
+  <div id="vInstall" hidden>
+    <p class="drawerp">Uygulamayı ana ekrana ekleyince kendi simgesiyle açılır.</p>
+    <ol class="steps">
+      <li><b>iPhone:</b> Safari’de alttaki Paylaş düğmesine bas, “Ana Ekrana Ekle”yi seç.</li>
+      <li><b>Android:</b> Chrome’da sağ üstteki ⋮ menüsünü aç, “Uygulamayı yükle” veya “Ana ekrana ekle”yi seç.</li>
+    </ol>
+  </div>
+
+  <div id="vSetup" hidden>
+    <p class="drawerp">Yönetici girişi için önce veritabanı bağlanmalı. Kurulum rehberindeki Firebase adımlarını tamamlayın. O zamana kadar uygulama kayıtlı 24 maddeyle çalışır.</p>
+  </div>
+
+  <form id="vLogin" class="block" style="border-top:0;padding-top:0" hidden>
+    <div class="field"><label for="lEmail">E-posta</label><input id="lEmail" type="email" autocomplete="username" required></div>
+    <div class="field"><label for="lPass">Şifre</label><input id="lPass" type="password" autocomplete="current-password" required></div>
+    <p class="msg err" id="lMsg" role="alert"></p>
+    <button class="btn" type="submit" id="lBtn">Giriş yap</button>
+  </form>
+
+  <div id="vAdmin" hidden>
+    <form id="nameForm" class="block" style="border-top:0;padding-top:0">
+      <div class="inline">
+        <div class="field"><label for="aName">Uygulama adı</label><input id="aName" type="text" maxlength="40" required></div>
+        <button class="btn small" type="submit">Kaydet</button>
+      </div>
+    </form>
+    <div class="block" style="padding-block:0 14px;border-top:0">
+      <p class="msg" id="aMsg" role="status"></p>
+      <button type="button" class="btn" id="aSeed" hidden>24 maddeyi veritabanına yükle</button>
+      <button type="button" class="btn" id="aNew">Yeni madde ekle</button>
+      <button type="button" class="btn alt small" id="aOut">Çıkış yap</button>
+    </div>
+    <form id="imp" class="block">
+      <h3>İnternetten toplu ekle</h3>
+      <p class="drawerp" style="margin:0">Her satıra bir CAS numarası veya madde adı yaz. Bilgiler PubChem’den alınır, uygunluk seviyesi tahmin edilir. Sonra Düzenle ile kontrol et.</p>
+      <div class="field"><label for="impText">Maddeler (en fazla 50 satır)</label><textarea id="impText" rows="5" placeholder="7647-01-0&#10;sodyum karbonat&#10;glycerol"></textarea></div>
+      <button class="btn small" id="impBtn" type="submit">Bul ve ekle</button>
+      <pre class="read" id="impLog" hidden></pre>
+    </form>
+    <form id="ed" class="block" hidden novalidate>
+      <h3 id="edTitle">Yeni madde</h3>
+      <div class="field"><label for="fN">Madde adı</label><input id="fN" type="text" maxlength="80"></div>
+      <div class="field"><label for="fS">Diğer adları (virgülle)</label><input id="fS" type="text" maxlength="120"></div>
+      <div class="two">
+        <div class="field"><label for="fF">Formül</label><input id="fF" type="text" maxlength="40"></div>
+        <div class="field"><label for="fC">CAS numarası</label><input id="fC" type="text" inputmode="numeric" maxlength="12" placeholder="67-64-1"></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="fL">Uygunluk seviyesi</label><select id="fL"></select></div>
+        <div class="field"><label for="fW">Atık kodu</label><input id="fW" type="text" maxlength="20" placeholder="14 06 03*"></div>
+      </div>
+      <div class="field"><label for="fY">Uygunluk açıklaması</label><textarea id="fY" maxlength="400"></textarea></div>
+      <div class="field"><label for="fM">Geri kazanım yöntemi</label><input id="fM" type="text" maxlength="100"></div>
+      <div class="field"><label for="fSt">Depolama</label><input id="fSt" type="text" maxlength="200"></div>
+      <div class="field"><label for="fAv">Temastan kaçın</label><input id="fAv" type="text" maxlength="200"></div>
+      <div class="field"><label for="fA">İlk yardım</label><input id="fA" type="text" maxlength="200"></div>
+      <fieldset class="field"><legend>GHS simgeleri</legend><div class="ghsbox" id="fG"></div></fieldset>
+      <div class="field"><label for="fH">H kodları (virgülle)</label><input id="fH" type="text" maxlength="200" placeholder="H225, H319"></div>
+      <p class="msg" id="edMsg" role="alert"></p>
+      <div class="actions">
+        <button class="btn small" type="submit" id="edSave">Kaydet</button>
+        <button class="btn alt small" type="button" id="edCancel">Vazgeç</button>
+      </div>
+    </form>
+    <div id="admList"></div>
+  </div>
+</dialog>
+
+<script src="config.js"></script>
+<script src="lib/jsQR.js"></script>
+<script src="lib/qrcode.js"></script>
+<script src="lib/firebase-app-compat.js"></script>
+<script src="lib/firebase-auth-compat.js"></script>
+<script src="lib/firebase-firestore-compat.js"></script>
+<script src="online.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

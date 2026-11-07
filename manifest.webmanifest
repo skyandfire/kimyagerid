@@ -1,0 +1,17 @@
+{
+  "name": "Uygulama Adı",
+  "short_name": "Uygulama Adı",
+  "description": "Kimyasal maddelerin geri dönüşüm uygunluğunu gösterir.",
+  "lang": "tr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#e6edf0",
+  "theme_color": "#0b5f73",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
