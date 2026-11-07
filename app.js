@@ -7,14 +7,14 @@ const GHS = {
   '07': 'Zararlı, tahriş edici', '08': 'Sağlık tehlikesi', '09': 'Çevre tehlikesi'
 };
 const H = {
-  H225: 'Kolay alevlenir sıvı ve buhar', H226: 'Alevlenir sıvı ve buhar', H272: 'Yangını şiddetlendirebilir, yükseltgen',
-  H290: 'Metalleri aşındırabilir', H300: 'Yutulursa öldürücüdür', H301: 'Yutulursa toksiktir', H302: 'Yutulursa zararlıdır',
-  H304: 'Yutulur ve solunum yoluna girerse öldürücü olabilir', H310: 'Deriyle temasında öldürücüdür', H311: 'Deriyle temasında toksiktir',
+  H224: 'Aşırı alevlenir sıvı ve buhar', H225: 'Kolay alevlenir sıvı ve buhar', H226: 'Alevlenir sıvı ve buhar', H272: 'Yangını şiddetlendirebilir, yükseltgen',
+  H260: 'Suyla temasında kendiliğinden tutuşabilen alevlenir gazlar çıkarır', H290: 'Metalleri aşındırabilir', H300: 'Yutulursa öldürücüdür', H301: 'Yutulursa toksiktir', H302: 'Yutulursa zararlıdır',
+  H304: 'Yutulur ve solunum yoluna girerse öldürücü olabilir', H310: 'Deriyle temasında öldürücüdür', H311: 'Deriyle temasında toksiktir', H312: 'Deriyle temasında zararlıdır',
   H314: 'Ciddi cilt yanıklarına ve göz hasarına yol açar', H315: 'Cilt tahrişine yol açar', H317: 'Alerjik cilt reaksiyonuna yol açabilir',
   H318: 'Ciddi göz hasarına yol açar', H319: 'Ciddi göz tahrişine yol açar', H330: 'Solunursa öldürücüdür', H331: 'Solunursa toksiktir',
-  H332: 'Solunursa zararlıdır', H335: 'Solunum yollarında tahrişe yol açabilir', H336: 'Uyuşukluk veya baş dönmesine yol açabilir',
-  H340: 'Genetik bozukluklara yol açabilir', H341: 'Genetik bozukluklara yol açma şüphesi var', H350: 'Kansere yol açabilir',
-  H351: 'Kansere yol açma şüphesi var', H360D: 'Doğmamış çocukta hasara yol açabilir', H360Df: 'Doğmamış çocukta hasara yol açabilir, üremeyi etkileme şüphesi var',
+  H332: 'Solunursa zararlıdır', H334: 'Solunduğunda alerji, astım belirtileri veya solunum güçlüğüne yol açabilir', H335: 'Solunum yollarında tahrişe yol açabilir', H336: 'Uyuşukluk veya baş dönmesine yol açabilir',
+  H340: 'Genetik bozukluklara yol açabilir', H341: 'Genetik bozukluklara yol açma şüphesi var', H350: 'Kansere yol açabilir', H350i: 'Solunduğunda kansere yol açabilir',
+  H351: 'Kansere yol açma şüphesi var', H360D: 'Doğmamış çocukta hasara yol açabilir', H360FD: 'Üremeye ve doğmamış çocuğa zarar verebilir', H361f: 'Üremeye zarar verme şüphesi var', H360Df: 'Doğmamış çocukta hasara yol açabilir, üremeyi etkileme şüphesi var',
   H361d: 'Doğmamış çocukta hasara yol açma şüphesi var', H370: 'Organlarda hasara yol açar', H372: 'Uzun süreli veya tekrarlı maruziyette organlarda hasara yol açar',
   H373: 'Uzun süreli veya tekrarlı maruziyette organlarda hasara yol açabilir', H400: 'Sucul yaşam için çok toksiktir',
   H410: 'Sucul yaşam için çok toksiktir, etkisi uzun sürer', H411: 'Sucul yaşam için toksiktir, etkisi uzun sürer', H412: 'Sucul yaşam için zararlıdır, etkisi uzun sürer'
@@ -441,8 +441,11 @@ function openDrawer(v) {
 /* ---------- admin ---------- */
 function renderAdmin() {
   if (view !== 'admin' || !adminUser) return;
-  $('aSeed').hidden = !dbEmpty; $('aNew').hidden = dbEmpty; $('imp').hidden = dbEmpty || !$('ed').hidden;
-  if (dbEmpty) { $('admList').innerHTML = '<p class="none">Veritabanı boş. Önce 24 maddeyi yükleyin, sonra ekleme ve silme yapabilirsiniz.</p>'; return; }
+  const missing = dbEmpty ? base : base.filter(b => !C.some(c => c.cas === b.cas));
+  $('aSeed').hidden = !missing.length || !$('ed').hidden;
+  $('aSeed').textContent = dbEmpty ? `${base.length} maddeyi veritabanına yükle` : `${missing.length} yeni hazır maddeyi veritabanına ekle`;
+  $('aNew').hidden = dbEmpty; $('imp').hidden = dbEmpty || !$('ed').hidden;
+  if (dbEmpty) { $('admList').innerHTML = '<p class="none">Veritabanı boş. Önce hazır maddeleri yükleyin, sonra ekleme ve silme yapabilirsiniz.</p>'; return; }
   $('admList').innerHTML = `<h3 style="margin-block:12px 4px">Kayıtlı maddeler (${C.length})</h3>` + (C.map(c => `
     <div class="adm"><span><b>${esc(c.n)}</b><small>${esc(c.cas)}</small></span>
       <span class="actions">${confirming === c.cas
@@ -537,10 +540,11 @@ async function removeChem(cas) {
 async function seed() {
   $('aSeed').disabled = true;
   try {
+    const todo = dbEmpty ? base : base.filter(b => !C.some(c => c.cas === b.cas));
     const b = fs.batch();
-    base.forEach(c => b.set(fs.collection('chemicals').doc(c.cas), c));
+    todo.forEach(c => b.set(fs.collection('chemicals').doc(c.cas), c));
     await b.commit();
-    adminMsg(`${base.length} madde veritabanına yüklendi.`);
+    adminMsg(`${todo.length} madde veritabanına eklendi.`);
   } catch (err) { adminMsg(dbFail(err), true); }
   finally { $('aSeed').disabled = false; }
 }

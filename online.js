@@ -17,10 +17,16 @@
     hidroklorik: 'hydrochloric', sülfürik: 'sulfuric', sulfurik: 'sulfuric', nitrik: 'nitric', asetik: 'acetic', fosforik: 'phosphoric',
     sitrik: 'citric', formik: 'formic', oksalik: 'oxalic', borik: 'boric', laktik: 'lactic', aseton: 'acetone', benzen: 'benzene',
     toluen: 'toluene', ksilen: 'xylene', gliserin: 'glycerol', gliserol: 'glycerol', üre: 'urea', glikoz: 'glucose', sakaroz: 'sucrose',
-    nişasta: 'starch', fenol: 'phenol', eter: 'ether', heksan: 'hexane', kloroform: 'chloroform', formaldehit: 'formaldehyde',
+    nişasta: 'starch', fenol: 'phenol', eter: 'ether', heksan: 'hexane', kloroform: 'chloroform', formaldehit: 'formaldehyde', alkol: 'alcohol', etil: 'ethyl', metil: 'methyl', propil: 'propyl', bütil: 'butyl', izopropil: 'isopropyl',
     'tuz': 'sodium chloride', 'kezzap': 'nitric acid', 'göztaşı': 'copper sulfate', 'karbonat': 'carbonate', 'kireç': 'calcium hydroxide'
   };
   const toEnglish = q => q.toLocaleLowerCase('tr').split(/\s+/).map(w => TR[w] || w).join(' ');
+
+  // Turkish spelling of English chemical names: hekzan -> hexane, aseton -> acetone, siklohekzan -> cyclohexane.
+  const phonetic = q => toEnglish(q).split(' ').map(w => TR[w] ? w : w
+    .replace(/^siklo/, 'cyclo').replace(/^izo/, 'iso').replace(/^met(?!h)/, 'meth').replace(/^et(?!h)/, 'eth').replace(/k[sz]/g, 'x').replace(/k/g, 'c')
+    .replace(/[ıi̇]/g, 'i').replace(/ş/g, 'sh').replace(/ç/g, 'ch').replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ö/g, 'o')
+    .replace(/(an|en|on|in)$/, '$1e')).join(' ');
 
   function casValid(cas) {
     if (!/^\d{2,7}-\d{2}-\d$/.test(cas)) return false;
@@ -110,8 +116,12 @@
     const q = String(query).trim();
     if (!q) return null;
     let cid = await cidFor(q), viaTr = false;
-    const en = toEnglish(q);
-    if (!cid && en !== q.toLocaleLowerCase('tr')) { cid = await cidFor(en); viaTr = !!cid; }
+    const tried = new Set([q.toLocaleLowerCase('tr')]);
+    for (const alt of [toEnglish(q), phonetic(q)]) {
+      if (cid || tried.has(alt) || !/[a-z]/.test(alt)) continue;
+      tried.add(alt);
+      cid = await cidFor(alt); viaTr = !!cid;
+    }
     if (!cid) return null;
     const props = (await get(`${BASE}/compound/cid/${cid}/property/MolecularFormula,Title/JSON`))?.PropertyTable?.Properties?.[0] || {};
     const syn = (await get(`${BASE}/compound/cid/${cid}/synonyms/JSON`))?.InformationList?.Information?.[0]?.Synonym || [];

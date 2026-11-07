@@ -23,6 +23,92 @@
   "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al."
  },
  {
+  "cas": "12125-02-9",
+  "n": "Amonyum klorür",
+  "s": "Nişadır",
+  "f": "NH4Cl",
+  "l": 3,
+  "y": "Saf atık kristallendirilerek geri alınabilir, küçük ölçekte ekonomik değildir.",
+  "m": "Kristallendirme",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü asitler veya güçlü yükseltgenler.",
+  "a": "Göz veya ciltle temas ettiyse bol suyla yıka. Belirti sürerse tıbbi yardım al.",
+  "g": [
+   "07"
+  ],
+  "h": [
+   "H302",
+   "H319"
+  ]
+ },
+ {
+  "cas": "6484-52-2",
+  "n": "Amonyum nitrat",
+  "s": "",
+  "f": "NH4NO3",
+  "l": 2,
+  "y": "Kirlenmiş amonyum nitrat patlayıcı olabilir. Yalnızca yetkili firma işlem yapar.",
+  "m": "Yetkili firmaya teslim",
+  "w": "16 05 06*",
+  "st": "Serin ve kuru yerde, yanıcı ve organik maddelerden ayrı.",
+  "av": "Yanıcı maddeler, organik maddeler, indirgenler, metal tozları.",
+  "a": "Bulaşan yeri bol suyla yıka. Gerekirse tıbbi yardım al.",
+  "g": [
+   "03",
+   "07"
+  ],
+  "h": [
+   "H272",
+   "H319"
+  ]
+ },
+ {
+  "cas": "7783-20-2",
+  "n": "Amonyum sülfat",
+  "s": "",
+  "f": "(NH4)2SO4",
+  "l": 4,
+  "y": "Temiz madde gübre olarak değerlendirilebilir.",
+  "m": "Gübre olarak yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "62-53-3",
+  "n": "Anilin",
+  "s": "Aminobenzen",
+  "f": "C6H7N",
+  "l": 1,
+  "y": "Zehirlidir. Atığı geri kazanılmaz, yakılarak bertaraf edilir.",
+  "m": "Tehlikeli atık yakma",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, diğer maddelerden ayrı.",
+  "av": "Güçlü yükseltgenler ve asitler. Ayrıntı için Güvenlik Bilgi Formuna bakın.",
+  "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "05",
+   "06",
+   "08",
+   "09"
+  ],
+  "h": [
+   "H301",
+   "H311",
+   "H331",
+   "H317",
+   "H318",
+   "H341",
+   "H351",
+   "H372",
+   "H400"
+  ]
+ },
+ {
   "cas": "64-19-7",
   "n": "Asetik asit",
   "s": "Etanoik asit, glasiyal",
@@ -64,6 +150,30 @@
   "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
   "av": "Güçlü yükseltgenler, kloroform ve bazlar.",
   "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka."
+ },
+ {
+  "cas": "75-05-8",
+  "n": "Asetonitril",
+  "s": "Metil siyanür",
+  "f": "C2H3N",
+  "l": 4,
+  "y": "Kromatografi (HPLC) atığından damıtılarak geri kazanılır.",
+  "m": "Damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "07"
+  ],
+  "h": [
+   "H225",
+   "H302",
+   "H312",
+   "H319",
+   "H332"
+  ]
  },
  {
   "cas": "7758-99-8",
@@ -118,6 +228,51 @@
   "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114."
  },
  {
+  "cas": "10043-35-3",
+  "n": "Borik asit",
+  "s": "",
+  "f": "H3BO3",
+  "l": 2,
+  "y": "Üreme sağlığına zararlıdır. Kanalizasyona verilmez, lisanslı firmaya teslim edilir.",
+  "m": "Lisanslı firmaya teslim",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, diğer maddelerden ayrı.",
+  "av": "Güçlü yükseltgenler ve asitler. Ayrıntı için Güvenlik Bilgi Formuna bakın.",
+  "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "08"
+  ],
+  "h": [
+   "H360FD"
+  ]
+ },
+ {
+  "cas": "71-36-3",
+  "n": "Bütanol",
+  "s": "1-Bütanol, n-bütil alkol",
+  "f": "C4H10O",
+  "l": 4,
+  "y": "Damıtılarak geri kazanılır.",
+  "m": "Damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "05",
+   "07"
+  ],
+  "h": [
+   "H226",
+   "H302",
+   "H315",
+   "H318",
+   "H335",
+   "H336"
+  ]
+ },
+ {
   "cas": "7439-97-6",
   "n": "Civa",
   "s": "Merkür",
@@ -140,6 +295,52 @@
   "st": "Kilitli dolapta, sızdırmaz kap ve tepsi içinde.",
   "av": "Amonyak, azotürler, alüminyum. Dökülürse süpürgeyle toplanmaz.",
   "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114."
+ },
+ {
+  "cas": "7705-08-0",
+  "n": "Demir(III) klorür",
+  "s": "Ferrik klorür",
+  "f": "FeCl3",
+  "l": 3,
+  "y": "Devre kartı aşındırma atığından bakır geri alınır, çözelti yenilenebilir.",
+  "m": "Bakır geri kazanımı, rejenerasyon",
+  "w": "16 05 06*",
+  "st": "Asit dolabında, ikincil kap içinde, bazlardan ayrı.",
+  "av": "Bazlar, metaller, yükseltgenler.",
+  "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al.",
+  "g": [
+   "05",
+   "07"
+  ],
+  "h": [
+   "H290",
+   "H302",
+   "H315",
+   "H317",
+   "H318"
+  ]
+ },
+ {
+  "cas": "60-29-7",
+  "n": "Dietil eter",
+  "s": "Eter, etoksietan",
+  "f": "C4H10O",
+  "l": 3,
+  "y": "Damıtılabilir, ancak bekledikçe patlayıcı peroksit oluşturur. Eski eter damıtılmaz.",
+  "m": "Peroksit testinden sonra damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "07"
+  ],
+  "h": [
+   "H224",
+   "H302",
+   "H336"
+  ]
  },
  {
   "cas": "75-09-2",
@@ -165,6 +366,45 @@
   "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka."
  },
  {
+  "cas": "67-68-5",
+  "n": "Dimetil sülfoksit",
+  "s": "DMSO",
+  "f": "C2H6OS",
+  "l": 4,
+  "y": "Vakum damıtmayla geri kazanılabilir. Deriden kolay geçer ve içindeki maddeleri de taşır.",
+  "m": "Vakum damıtma",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "68-12-2",
+  "n": "Dimetilformamid",
+  "s": "DMF, N,N-dimetilformamid",
+  "f": "C3H7NO",
+  "l": 3,
+  "y": "Endüstride damıtılarak geri kazanılır. Üreme sağlığına zararlı olduğundan kapalı sistem gerekir.",
+  "m": "Kapalı sistemde damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "07",
+   "08"
+  ],
+  "h": [
+   "H226",
+   "H312",
+   "H319",
+   "H332",
+   "H360D"
+  ]
+ },
+ {
   "cas": "64-17-5",
   "n": "Etanol",
   "s": "Etil alkol",
@@ -186,6 +426,28 @@
   "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka."
  },
  {
+  "cas": "141-78-6",
+  "n": "Etil asetat",
+  "s": "Etil etanoat",
+  "f": "C4H8O2",
+  "l": 5,
+  "y": "Boya ve kaplama atığından damıtılarak kolayca geri kazanılır.",
+  "m": "Damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "07"
+  ],
+  "h": [
+   "H225",
+   "H319",
+   "H336"
+  ]
+ },
+ {
   "cas": "107-21-1",
   "n": "Etilen glikol",
   "s": "1,2-Etandiol, antifriz",
@@ -205,6 +467,32 @@
   "st": "Kapalı kapta, gıda ve içeceklerden uzakta.",
   "av": "Güçlü yükseltgenler, güçlü asitler.",
   "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114."
+ },
+ {
+  "cas": "108-95-2",
+  "n": "Fenol",
+  "s": "Karbolik asit, hidroksibenzen",
+  "f": "C6H6O",
+  "l": 2,
+  "y": "Endüstride atık sudan ekstraksiyonla geri alınır. Laboratuvar atığı yakılır.",
+  "m": "Tehlikeli atık yakma",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, diğer maddelerden ayrı.",
+  "av": "Güçlü yükseltgenler ve asitler. Ayrıntı için Güvenlik Bilgi Formuna bakın.",
+  "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "05",
+   "06",
+   "08"
+  ],
+  "h": [
+   "H301",
+   "H311",
+   "H331",
+   "H314",
+   "H341",
+   "H373"
+  ]
  },
  {
   "cas": "50-00-0",
@@ -234,6 +522,154 @@
   "st": "Havalandırılan yerde, 15 °C üzerinde, kapalı kapta.",
   "av": "Güçlü yükseltgenler, asitler, fenoller.",
   "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114."
+ },
+ {
+  "cas": "64-18-6",
+  "n": "Formik asit",
+  "s": "Karınca asidi, metanoik asit",
+  "f": "CH2O2",
+  "l": 3,
+  "y": "Proses akışlarından damıtmayla geri alınabilir. Küçük ölçekte ekonomik değildir.",
+  "m": "Damıtma",
+  "w": "16 05 06*",
+  "st": "Asit dolabında, ikincil kap içinde, bazlardan ayrı.",
+  "av": "Bazlar, metaller, yükseltgenler.",
+  "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al.",
+  "g": [
+   "02",
+   "05",
+   "06"
+  ],
+  "h": [
+   "H226",
+   "H302",
+   "H314",
+   "H331"
+  ]
+ },
+ {
+  "cas": "7664-38-2",
+  "n": "Fosforik asit",
+  "s": "Ortofosforik asit, %85",
+  "f": "H3PO4",
+  "l": 3,
+  "y": "Metal yüzey işlem atığından geri kazanılabilir. Küçük ölçekte nötralize edilir.",
+  "m": "Rejenerasyon veya nötralizasyon",
+  "w": "16 05 06*",
+  "st": "Asit dolabında, ikincil kap içinde, bazlardan ayrı.",
+  "av": "Bazlar, metaller, yükseltgenler.",
+  "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al.",
+  "g": [
+   "05"
+  ],
+  "h": [
+   "H290",
+   "H314"
+  ]
+ },
+ {
+  "cas": "50-99-7",
+  "n": "Glikoz",
+  "s": "D-glukoz, üzüm şekeri",
+  "f": "C6H12O6",
+  "l": 5,
+  "y": "Tehlikesiz ve biyolojik olarak parçalanır. Kirlenmemiş madde yeniden kullanılır.",
+  "m": "Yeniden kullanım, biyolojik arıtma",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "56-81-5",
+  "n": "Gliserin",
+  "s": "Gliserol",
+  "f": "C3H8O3",
+  "l": 4,
+  "y": "Ham gliserin (örneğin biyodizel yan ürünü) damıtılarak saflaştırılır.",
+  "m": "Vakum damıtma",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "7761-88-8",
+  "n": "Gümüş nitrat",
+  "s": "Cehennem taşı",
+  "f": "AgNO3",
+  "l": 3,
+  "y": "Gümüş değerli olduğu için çözeltiden çöktürülerek veya elektrolizle geri alınır.",
+  "m": "Gümüş geri kazanımı",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, sızdırmaz kapta.",
+  "av": "Güçlü yükseltgenler ve indirgenler.",
+  "a": "Hemen tıbbi yardım al. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "03",
+   "05",
+   "09"
+  ],
+  "h": [
+   "H272",
+   "H314",
+   "H410"
+  ]
+ },
+ {
+  "cas": "110-54-3",
+  "n": "Hekzan",
+  "s": "n-Hekzan, heksan",
+  "f": "C6H14",
+  "l": 4,
+  "y": "Yağ ekstraksiyonu atığından damıtılarak geri kazanılır. Sinir sistemine zararlı olduğundan kapalı sistem tercih edilir.",
+  "m": "Damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "07",
+   "08",
+   "09"
+  ],
+  "h": [
+   "H225",
+   "H304",
+   "H315",
+   "H336",
+   "H361f",
+   "H373",
+   "H411"
+  ]
+ },
+ {
+  "cas": "7664-39-3",
+  "n": "Hidroflorik asit",
+  "s": "Fluorhidrik asit, HF",
+  "f": "HF",
+  "l": 1,
+  "y": "Çok zehirlidir, deriden geçip kemiğe zarar verir. Yalnızca yetkili firma işlem yapar.",
+  "m": "Yetkili firmaya teslim",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, diğer maddelerden ayrı.",
+  "av": "Güçlü yükseltgenler ve asitler. Ayrıntı için Güvenlik Bilgi Formuna bakın.",
+  "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "05",
+   "06"
+  ],
+  "h": [
+   "H300",
+   "H310",
+   "H330",
+   "H314"
+  ]
  },
  {
   "cas": "7722-84-1",
@@ -279,26 +715,131 @@
   "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al."
  },
  {
-  "cas": "67-63-0",
-  "n": "İzopropil alkol",
-  "s": "2-Propanol, IPA",
-  "f": "C3H8O",
-  "l": 5,
-  "y": "Elektronik ve baskı sektöründe temizlik atığından damıtılarak geri kazanılır.",
+  "cas": "1305-62-0",
+  "n": "Kalsiyum hidroksit",
+  "s": "Sönmüş kireç",
+  "f": "Ca(OH)2",
+  "l": 4,
+  "y": "Asidik atıkların nötralizasyonunda yeniden kullanılır.",
+  "m": "Nötralizasyonda yeniden kullanım",
+  "w": "16 05 06*",
+  "st": "Kuru ve sıkı kapalı kapta, asitlerden ayrı.",
+  "av": "Asitler, alüminyum ve çinko.",
+  "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al.",
+  "g": [
+   "05",
+   "07"
+  ],
+  "h": [
+   "H315",
+   "H318",
+   "H335"
+  ]
+ },
+ {
+  "cas": "471-34-1",
+  "n": "Kalsiyum karbonat",
+  "s": "Kireç taşı, tebeşir",
+  "f": "CaCO3",
+  "l": 4,
+  "y": "Tehlikesizdir. Temiz madde dolgu veya nötralizasyon malzemesi olarak kullanılır.",
+  "m": "Yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "10043-52-4",
+  "n": "Kalsiyum klorür",
+  "s": "",
+  "f": "CaCl2",
+  "l": 3,
+  "y": "Kurutucu olarak kullanılmışsa ısıtılarak yenilenebilir. Yol tuzu olarak da kullanılır.",
+  "m": "Kurutarak yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü asitler veya güçlü yükseltgenler.",
+  "a": "Göz veya ciltle temas ettiyse bol suyla yıka. Belirti sürerse tıbbi yardım al.",
+  "g": [
+   "07"
+  ],
+  "h": [
+   "H319"
+  ]
+ },
+ {
+  "cas": "1305-78-8",
+  "n": "Kalsiyum oksit",
+  "s": "Sönmemiş kireç",
+  "f": "CaO",
+  "l": 3,
+  "y": "Suyla tepkimeye girip ısınır. Söndürülüp nötralizasyonda kullanılabilir.",
+  "m": "Nötralizasyonda yeniden kullanım",
+  "w": "16 05 06*",
+  "st": "Kuru ve sıkı kapalı kapta, asitlerden ayrı.",
+  "av": "Asitler, alüminyum ve çinko.",
+  "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al.",
+  "g": [
+   "05",
+   "07"
+  ],
+  "h": [
+   "H315",
+   "H318",
+   "H335"
+  ]
+ },
+ {
+  "cas": "67-66-3",
+  "n": "Kloroform",
+  "s": "Triklorometan",
+  "f": "CHCl3",
+  "l": 3,
+  "y": "Damıtılabilir, ancak halojensiz çözücülerden ayrı toplanmalıdır.",
+  "m": "Ayrı toplama, damıtma",
+  "w": "14 06 02*",
+  "st": "Halojenli çözücü olarak ayrı, sızdırmaz kapta, serin yerde.",
+  "av": "Alkali metaller, güçlü bazlar, alüminyum.",
+  "a": "Kişiyi temiz havaya çıkar. Belirti varsa tıbbi yardım al.",
+  "g": [
+   "06",
+   "08"
+  ],
+  "h": [
+   "H302",
+   "H315",
+   "H319",
+   "H331",
+   "H351",
+   "H361d",
+   "H372"
+  ]
+ },
+ {
+  "cas": "1330-20-7",
+  "n": "Ksilen",
+  "s": "Dimetilbenzen, ksilol",
+  "f": "C8H10",
+  "l": 4,
+  "y": "Boya inceltici ve laboratuvar atığından damıtılarak geri kazanılır.",
   "m": "Damıtma",
   "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
   "g": [
    "02",
    "07"
   ],
   "h": [
-   "H225",
-   "H319",
-   "H336"
-  ],
-  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
-  "av": "Güçlü yükseltgenler. Uzun bekletilirse peroksit oluşabilir.",
-  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka."
+   "H226",
+   "H312",
+   "H315",
+   "H332"
+  ]
  },
  {
   "cas": "10099-74-8",
@@ -330,6 +871,40 @@
   "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114."
  },
  {
+  "cas": "7704-34-9",
+  "n": "Kükürt",
+  "s": "",
+  "f": "S",
+  "l": 4,
+  "y": "Saf kükürt eritilerek yeniden kullanılır. Toz hâli alevlenebilir.",
+  "m": "Eritme ve yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü asitler veya güçlü yükseltgenler.",
+  "a": "Göz veya ciltle temas ettiyse bol suyla yıka. Belirti sürerse tıbbi yardım al.",
+  "g": [
+   "07"
+  ],
+  "h": [
+   "H315"
+  ]
+ },
+ {
+  "cas": "7487-88-9",
+  "n": "Magnezyum sülfat",
+  "s": "İngiliz tuzu, Epsom tuzu",
+  "f": "MgSO4",
+  "l": 3,
+  "y": "Tehlikesizdir. Kurutucu olarak kullanılmışsa ısıtılarak suyu uzaklaştırılıp yeniden kullanılabilir.",
+  "m": "Kurutarak yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
   "cas": "67-56-1",
   "n": "Metanol",
   "s": "Metil alkol",
@@ -353,6 +928,59 @@
   "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
   "av": "Güçlü yükseltgenler, asitler.",
   "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114."
+ },
+ {
+  "cas": "91-20-3",
+  "n": "Naftalin",
+  "s": "Naftalen, güve ilacı",
+  "f": "C10H8",
+  "l": 2,
+  "y": "Endüstride katran fraksiyonlarından geri alınır. Küçük miktarlar yakılır.",
+  "m": "Tehlikeli atık yakma",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, diğer maddelerden ayrı.",
+  "av": "Güçlü yükseltgenler ve asitler. Ayrıntı için Güvenlik Bilgi Formuna bakın.",
+  "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "07",
+   "08",
+   "09"
+  ],
+  "h": [
+   "H302",
+   "H351",
+   "H410"
+  ]
+ },
+ {
+  "cas": "7786-81-4",
+  "n": "Nikel(II) sülfat",
+  "s": "",
+  "f": "NiSO4",
+  "l": 2,
+  "y": "Kaplama banyosu atığından nikel geri alınabilir, ancak kanserojen olduğundan yalnızca lisanslı tesis işler.",
+  "m": "Lisanslı metal geri kazanımı",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, sızdırmaz kapta.",
+  "av": "Güçlü yükseltgenler ve indirgenler.",
+  "a": "Hemen tıbbi yardım al. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "07",
+   "08",
+   "09"
+  ],
+  "h": [
+   "H302",
+   "H332",
+   "H315",
+   "H317",
+   "H334",
+   "H341",
+   "H350i",
+   "H360D",
+   "H372",
+   "H410"
+  ]
  },
  {
   "cas": "7697-37-2",
@@ -379,6 +1007,31 @@
   "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al."
  },
  {
+  "cas": "109-66-0",
+  "n": "Pentan",
+  "s": "n-Pentan",
+  "f": "C5H12",
+  "l": 4,
+  "y": "Çok uçucudur. Soğutmalı damıtmayla geri kazanılır.",
+  "m": "Soğutmalı damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "07",
+   "08",
+   "09"
+  ],
+  "h": [
+   "H225",
+   "H304",
+   "H336",
+   "H411"
+  ]
+ },
+ {
   "cas": "127-18-4",
   "n": "Perkloretilen",
   "s": "Tetrakloroetilen, kuru temizleme sıvısı",
@@ -403,6 +1056,81 @@
   "st": "Halojenli çözücü olarak ayrı, sızdırmaz kapta.",
   "av": "Alkali metaller, güçlü bazlar.",
   "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka."
+ },
+ {
+  "cas": "7778-50-9",
+  "n": "Potasyum dikromat",
+  "s": "",
+  "f": "K2Cr2O7",
+  "l": 1,
+  "y": "Altı değerlikli krom çok zehirli ve kanserojendir. Önce indirgenir, sonra lisanslı firmaya verilir.",
+  "m": "İndirgeme, yetkili firmaya teslim",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, sızdırmaz kapta.",
+  "av": "Güçlü yükseltgenler ve indirgenler.",
+  "a": "Hemen tıbbi yardım al. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "03",
+   "05",
+   "06",
+   "08",
+   "09"
+  ],
+  "h": [
+   "H272",
+   "H301",
+   "H312",
+   "H314",
+   "H317",
+   "H330",
+   "H334",
+   "H340",
+   "H350",
+   "H360FD",
+   "H372",
+   "H410"
+  ]
+ },
+ {
+  "cas": "1310-58-3",
+  "n": "Potasyum hidroksit",
+  "s": "Potas kostik",
+  "f": "KOH",
+  "l": 3,
+  "y": "Kirli olmayan çözelti başka proseslerde asit nötralizasyonu için kullanılabilir.",
+  "m": "Prosesler arası yeniden kullanım",
+  "w": "16 05 06*",
+  "st": "Kuru ve sıkı kapalı kapta, asitlerden ayrı.",
+  "av": "Asitler, alüminyum ve çinko.",
+  "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al.",
+  "g": [
+   "05",
+   "07"
+  ],
+  "h": [
+   "H290",
+   "H302",
+   "H314"
+  ]
+ },
+ {
+  "cas": "7757-79-1",
+  "n": "Potasyum nitrat",
+  "s": "Güherçile",
+  "f": "KNO3",
+  "l": 3,
+  "y": "Temiz madde gübre olarak değerlendirilebilir. Yanıcı maddelerle karıştırılmaz.",
+  "m": "Gübre olarak yeniden kullanım",
+  "w": "16 05 06*",
+  "st": "Serin ve kuru yerde, yanıcı ve organik maddelerden ayrı.",
+  "av": "Yanıcı maddeler, organik maddeler, indirgenler, metal tozları.",
+  "a": "Bulaşan yeri bol suyla yıka. Gerekirse tıbbi yardım al.",
+  "g": [
+   "03"
+  ],
+  "h": [
+   "H272"
+  ]
  },
  {
   "cas": "7722-64-7",
@@ -460,6 +1188,117 @@
   "a": "Hemen 112’yi ara. Ulusal Zehir Danışma Merkezi: 114."
  },
  {
+  "cas": "57-55-6",
+  "n": "Propilen glikol",
+  "s": "1,2-Propandiol",
+  "f": "C3H8O2",
+  "l": 4,
+  "y": "Antifriz ve buz çözücü atıklarından damıtılarak geri kazanılır.",
+  "m": "Vakum damıtma",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "57-50-1",
+  "n": "Sakaroz",
+  "s": "Şeker, çay şekeri",
+  "f": "C12H22O11",
+  "l": 5,
+  "y": "Tehlikesiz ve biyolojik olarak parçalanır.",
+  "m": "Yeniden kullanım, biyolojik arıtma",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "110-82-7",
+  "n": "Siklohekzan",
+  "s": "",
+  "f": "C6H12",
+  "l": 4,
+  "y": "Damıtılarak geri kazanılır. Suya karışmamalıdır.",
+  "m": "Damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "07",
+   "08",
+   "09"
+  ],
+  "h": [
+   "H225",
+   "H304",
+   "H315",
+   "H336",
+   "H410"
+  ]
+ },
+ {
+  "cas": "77-92-9",
+  "n": "Sitrik asit",
+  "s": "Limon tuzu",
+  "f": "C6H8O7",
+  "l": 4,
+  "y": "Biyolojik olarak parçalanır. Seyreltik atık nötralize edilerek bertaraf edilir, temiz madde yeniden kullanılır.",
+  "m": "Yeniden kullanım, nötralizasyon",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü asitler veya güçlü yükseltgenler.",
+  "a": "Göz veya ciltle temas ettiyse bol suyla yıka. Belirti sürerse tıbbi yardım al.",
+  "g": [
+   "07"
+  ],
+  "h": [
+   "H319"
+  ]
+ },
+ {
+  "cas": "7440-23-5",
+  "n": "Sodyum",
+  "s": "Sodyum metali",
+  "f": "Na",
+  "l": 1,
+  "y": "Suyla şiddetli tepkimeye girer. Artıklar uzman tarafından alkolle kontrollü yok edilir.",
+  "m": "Kontrollü bozundurma",
+  "w": "16 05 06*",
+  "st": "Kuru yağ veya gaz altında, sudan ve nemden uzakta.",
+  "av": "Su, nem, asitler. Yangında su kullanılmaz, D sınıfı söndürücü gerekir.",
+  "a": "Yanıkta bulaşan parçaları temizleyip bol suyla yıka. Hemen tıbbi yardım al.",
+  "g": [
+   "02",
+   "05"
+  ],
+  "h": [
+   "H260",
+   "H314"
+  ]
+ },
+ {
+  "cas": "144-55-8",
+  "n": "Sodyum bikarbonat",
+  "s": "Yemek sodası, karbonat",
+  "f": "NaHCO3",
+  "l": 4,
+  "y": "Tehlikesizdir. Temiz madde asit dökülmelerini nötralize etmekte yeniden kullanılır.",
+  "m": "Yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
   "cas": "1310-73-2",
   "n": "Sodyum hidroksit",
   "s": "Kostik, sud kostik",
@@ -502,6 +1341,25 @@
   "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al."
  },
  {
+  "cas": "497-19-8",
+  "n": "Sodyum karbonat",
+  "s": "Soda, çamaşır sodası",
+  "f": "Na2CO3",
+  "l": 3,
+  "y": "Temiz atığı nötralizasyonda veya yeniden kullanımda değerlendirilebilir.",
+  "m": "Yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü asitler veya güçlü yükseltgenler.",
+  "a": "Göz veya ciltle temas ettiyse bol suyla yıka. Belirti sürerse tıbbi yardım al.",
+  "g": [
+   "07"
+  ],
+  "h": [
+   "H319"
+  ]
+ },
+ {
   "cas": "7647-14-5",
   "n": "Sodyum klorür",
   "s": "Sofra tuzu",
@@ -515,6 +1373,60 @@
   "st": "Kuru yerde, kapalı kapta.",
   "av": "Güçlü asitlerle ısıtma.",
   "a": "Gözle temasta suyla yıka."
+ },
+ {
+  "cas": "7632-00-0",
+  "n": "Sodyum nitrit",
+  "s": "",
+  "f": "NaNO2",
+  "l": 1,
+  "y": "Zehirli ve yükseltgendir. Geri kazanılmaz.",
+  "m": "Yetkili firmaya teslim",
+  "w": "16 05 06*",
+  "st": "Serin ve kuru yerde, yanıcı ve organik maddelerden ayrı.",
+  "av": "Yanıcı maddeler, organik maddeler, indirgenler, metal tozları.",
+  "a": "Bulaşan yeri bol suyla yıka. Gerekirse tıbbi yardım al.",
+  "g": [
+   "03",
+   "06",
+   "09"
+  ],
+  "h": [
+   "H272",
+   "H301",
+   "H319",
+   "H400"
+  ]
+ },
+ {
+  "cas": "7757-82-6",
+  "n": "Sodyum sülfat",
+  "s": "Glauber tuzu",
+  "f": "Na2SO4",
+  "l": 3,
+  "y": "Kurutucu olarak kullanılan madde ısıtılarak yenilenebilir. Çözücüyle kirlenmişse tehlikeli atıktır.",
+  "m": "Kurutarak yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "7772-98-7",
+  "n": "Sodyum tiyosülfat",
+  "s": "Hipo",
+  "f": "Na2S2O3",
+  "l": 3,
+  "y": "Fotoğraf banyosu atığında gümüş geri kazanılabilir, çözeltinin kendisi düşük değerlidir.",
+  "m": "Gümüş geri kazanımı",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
  },
  {
   "cas": "7664-93-9",
@@ -535,6 +1447,31 @@
   "st": "Asit dolabında, ikincil kap içinde, bazlardan ayrı.",
   "av": "Asidin üzerine su dökme, seyreltirken asidi suya yavaşça ekle. Bazlar, metaller, organikler.",
   "a": "Bulaşan giysiyi çıkar, en az 15 dakika bol suyla yıka. Hemen tıbbi yardım al."
+ },
+ {
+  "cas": "109-99-9",
+  "n": "Tetrahidrofuran",
+  "s": "THF, oksolan",
+  "f": "C4H8O",
+  "l": 3,
+  "y": "Damıtılabilir, ancak peroksit oluşturur. Damıtmadan önce peroksit testi gerekir.",
+  "m": "Peroksit testinden sonra damıtma",
+  "w": "14 06 03*",
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler, açık alev.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka.",
+  "g": [
+   "02",
+   "07",
+   "08"
+  ],
+  "h": [
+   "H225",
+   "H302",
+   "H319",
+   "H335",
+   "H351"
+  ]
  },
  {
   "cas": "108-88-3",
@@ -560,6 +1497,88 @@
   ],
   "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
   "av": "Güçlü yükseltgenler, nitrik asit.",
+  "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka."
+ },
+ {
+  "cas": "7733-02-0",
+  "n": "Çinko sülfat",
+  "s": "",
+  "f": "ZnSO4",
+  "l": 3,
+  "y": "Çinko, çözeltiden elektrolizle geri alınabilir. Kanalizasyona verilmez.",
+  "m": "Elektrolitik metal kazanımı",
+  "w": "16 05 06*",
+  "st": "Kilitli dolapta, sızdırmaz kapta.",
+  "av": "Güçlü yükseltgenler ve indirgenler.",
+  "a": "Hemen tıbbi yardım al. Ulusal Zehir Danışma Merkezi: 114.",
+  "g": [
+   "05",
+   "07",
+   "09"
+  ],
+  "h": [
+   "H302",
+   "H318",
+   "H410"
+  ]
+ },
+ {
+  "cas": "57-13-6",
+  "n": "Üre",
+  "s": "Karbamit",
+  "f": "CH4N2O",
+  "l": 4,
+  "y": "Tehlikesizdir. Temiz madde gübre olarak değerlendirilebilir.",
+  "m": "Gübre olarak yeniden kullanım",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü yükseltgenler.",
+  "a": "Gözle temasta suyla yıka.",
+  "g": [],
+  "h": []
+ },
+ {
+  "cas": "7553-56-2",
+  "n": "İyot",
+  "s": "",
+  "f": "I2",
+  "l": 3,
+  "y": "Endüstriyel atıklardan geri kazanılabilir. Küçük miktarlar tiyosülfatla indirgenir.",
+  "m": "Geri kazanım veya indirgeme",
+  "w": "16 05 09",
+  "st": "Kuru yerde, kapalı kapta.",
+  "av": "Güçlü asitler veya güçlü yükseltgenler.",
+  "a": "Göz veya ciltle temas ettiyse bol suyla yıka. Belirti sürerse tıbbi yardım al.",
+  "g": [
+   "07",
+   "09"
+  ],
+  "h": [
+   "H312",
+   "H332",
+   "H400"
+  ]
+ },
+ {
+  "cas": "67-63-0",
+  "n": "İzopropil alkol",
+  "s": "2-Propanol, IPA",
+  "f": "C3H8O",
+  "l": 5,
+  "y": "Elektronik ve baskı sektöründe temizlik atığından damıtılarak geri kazanılır.",
+  "m": "Damıtma",
+  "w": "14 06 03*",
+  "g": [
+   "02",
+   "07"
+  ],
+  "h": [
+   "H225",
+   "H319",
+   "H336"
+  ],
+  "st": "Serin, havalandırılan yanıcı madde dolabında, ısı ve kıvılcımdan uzakta.",
+  "av": "Güçlü yükseltgenler. Uzun bekletilirse peroksit oluşabilir.",
   "a": "Kişiyi temiz havaya çıkar. Göz veya ciltle temas ettiyse bol suyla yıka."
  }
 ]

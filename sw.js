@@ -1,5 +1,5 @@
 // Offline support: app files are saved on first visit, fresh ones are preferred when online.
-const CACHE = 'app-v2';
+const CACHE = 'app-v4';
 const SHELL = [
   './', 'index.html', 'style.css', 'app.js', 'online.js', 'config.js', 'chemicals.json', 'manifest.webmanifest',
   'lib/jsQR.js', 'lib/qrcode.js', 'lib/firebase-app-compat.js', 'lib/firebase-auth-compat.js', 'lib/firebase-firestore-compat.js',
